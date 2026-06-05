@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Panel de Precios"
+            android:textColor="#02a127"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- 1. Bloque PET -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="PET Botella ($):"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/etPet"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#02a127"
+                android:textAlignment="viewEnd"/>
+        </LinearLayout>
+
+        <!-- 2. Bloque CARTÓN -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Cartón ($):"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/etCarton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#02a127"
+                android:textAlignment="viewEnd"/>
+        </LinearLayout>
+
+        <!-- 3. Bloque BOTE ALUMINIO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Bote Aluminio ($):"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/etBoteAluminio"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#02a127"
+                android:textAlignment="viewEnd"/>
+        </LinearLayout>
+
+        <!-- 4. Bloque COBRE -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Cobre ($):"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/etCobre"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#02a127"
+                android:textAlignment="viewEnd"/>
+        </LinearLayout>
+
+        <!-- 5. Bloque CHATARRA -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Chatarra ($):"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/etChatarra"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#02a127"
+                android:textAlignment="viewEnd"/>
+        </LinearLayout>
+
+        <!-- 6. Bloque RADIADOR -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Radiador de Al. ($):"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/etRadiador"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#02a127"
+                android:textAlignment="viewEnd"/>
+        </LinearLayout>
+
+        <!-- 7. Bloque BRONCE -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Bronce ($):"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/etBronce"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#02a127"
+                android:textAlignment="viewEnd"/>
+        </LinearLayout>
+
+        <!-- 8. Bloque PLASTICO GRUESO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Plástico Grueso ($):"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/etPlastico"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#02a127"
+                android:textAlignment="viewEnd"/>
+        </LinearLayout>
+
+        <!-- 9. Bloque ANTIMONIO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Antimonio ($):"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/etAntimonio"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#02a127"
+                android:textAlignment="viewEnd"/>
+        </LinearLayout>
+
+        <!-- 10. Bloque ALUMINIO GRUESO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Aluminio Grueso ($):"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/etAluminioGrueso"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#02a127"
+                android:textAlignment="viewEnd"/>
+        </LinearLayout>
+
+        <!-- 11. Bloque ARCHIVO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Archivo ($):"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/etArchivo"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#02a127"
+                android:textAlignment="viewEnd"/>
+        </LinearLayout>
+
+        <!-- 12. Bloque BOTE CHILERO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Bote Chilero ($):"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/etChilero"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#02a127"
+                android:textAlignment="viewEnd"/>
+        </LinearLayout>
+
+        <!-- 13. Bloque BATERÍAS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Baterías ($):"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/etBaterias"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#02a127"
+                android:textAlignment="viewEnd"/>
+        </LinearLayout>
+
+        <!-- Botones de Acción -->
+        <Button
+            android:id="@+id/btnActualizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#02a127"
+            android:padding="16dp"
+            android:text="ACTUALIZAR PRECIOS EN LA WEB"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCerrarSesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#323232"
+            android:text="Cerrar Sesión"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>
